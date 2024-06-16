@@ -1,0 +1,57 @@
+Ejemplo prácitco
+
+En este momento te invitamos a tratar de aplicar los conocimientos adquiridos en esta clase resolviendo el siguiente ejercicio, el cual consiste en la creación de una aplicación para almacenar una lista de tareas (to-do list).
+
+ 📌 El objetivo de esta aplicación será recibir información sobre una tarea (to-do) por parte del usuario en un campo de texto el cual será renderizado en una lista debajo de este input al hacer click en un botón de envío. 
+
+💪 Además agregaremos un componente que se encargará de llevar una cuenta del total de tareas en la lista que deberá ser renderizado justo antes de dicha lista. Para llegar al resultado final te sugerimos seguir los siguientes pasos:
+
+
+PASO 1
+
+Configuración inicial
+Crea un nuevo proyecto de React/Vite.
+Crea los archivos App.jsx, AddToDo.jsx, ToDoCounter.jsx, ToDoList.js y App.css.
+
+
+PASO 2
+
+Implementación de AddToDo
+Define un componente de función AddToDo.
+
+En el componente AddToDo, define una función handleSubmit que capture el valor del input y lo añada a la lista de tareas utilizando setTodos (Esta función setter será definida dentro de app junto con el estado).
+
+Crea un formulario con un input y un botón, y asocia la función handleSubmit al evento onSubmit del formulario.
+
+
+PASO 3
+
+Implementación de ToDoCounter
+Define un componente de función ToDoCounter.
+
+En el componente ToDoCounter, renderiza el número total de tareas recibido por props.
+
+
+PASO 4
+
+Implementación de ToDoList
+Define un componente de función ToDoList.
+
+En el componente ToDoList, itera sobre el array de tareas (todos) recibidas por props y muestra cada tarea como un elemento <li> en una lista <ul>.
+
+Asigna una key única a cada elemento <li> utilizando el índice de la tarea en el array.
+
+
+
+PASO 5
+
+Implementación de App
+
+
+Define el estado todos utilizando useState y proporciona un array inicial de tareas.
+
+Renderiza los componentes AddToDo, ToDoCounter y ToDoList, pasando el estado todos y la función setTodos según sea necesario.
+
+
+
+recuerda guiarme paso a paso
